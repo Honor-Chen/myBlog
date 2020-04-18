@@ -1,7 +1,7 @@
 {
-  "name": "blog",
+  "name": "myblog",
   "version": "1.0.0",
-  "description": "blog",
+  "description": "myblog",
   "main": "index.js",
   "directories": {
     "doc": "docs"
