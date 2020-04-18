@@ -1,5 +1,5 @@
 module.exports = {
-	base: '/myblog/', // 改变非根路径
+	base: '/myBlog/', // 改变非根路径
 	title: '鹿子博客',
 	description: 'honor-chen-blog',
 	head: [
