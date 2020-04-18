@@ -106,7 +106,7 @@ module.exports = {
 					collapsable: false, // 是否展开
 					children: [
 						'source-code.md',
-						'vue-1.md'
+						'Vue.js 源码调试准备工作.md'
 					]
 				}
 			],
@@ -121,10 +121,15 @@ module.exports = {
 				}
 			],
 			'/servers-ecosystem/': [
-				'/'
 			],
 			'/essay/': [
-				'/'
+				{
+					title: '杂记',
+					collapsable: false, // 是否展开
+					children: [
+						'前端路由.md'
+					]
+				}
 			]
 		}
 	},
