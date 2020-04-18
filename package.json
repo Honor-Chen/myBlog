@@ -1,0 +1,31 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "blog",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "delay": "bash delay.sh",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "dev:md": "node ./builds/addComponents.js && vuepress dev docs && node ./builds/delComponents.js",
+    "build:md": "node ./builds/addComponents.js && vuepress build docs && node ./builds/delComponents.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "honor-chen",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.4.1",
+    "@vuepress/plugin-back-to-top": "^1.4.1",
+    "@vuepress/plugin-blog": "^1.9.2",
+    "@vuepress/plugin-google-analytics": "^1.4.1",
+    "@vuepress/plugin-medium-zoom": "^1.4.1",
+    "@vuepress/plugin-nprogress": "^1.4.1",
+    "@vuepress/plugin-pwa": "^1.4.1",
+    "vuepress": "^1.4.1"
+  }
+}
