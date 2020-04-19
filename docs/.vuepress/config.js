@@ -69,6 +69,10 @@ module.exports = {
 						link: 'http://www.idspring.cn'
 					}
 				]
+			},
+			{
+				text: 'GitHub',
+				link: 'https://github.com/Honor-Chen'
 			}
 		],
 		sidebar: {
@@ -135,7 +139,14 @@ module.exports = {
 	},
 	plugins: [
 			'@vuepress/last-updated',
-			'@vuepress/back-to-top',
+			[
+				'vuepress-plugin-gotop-plus', {
+					// 是否在移动设备上显示(default: true)
+					mobileShow: false,
+					// 回到页首元素显示触发的高度阈值(default: 50)
+					threshold: 50
+				}
+			],
 			'@vuepress/active-header-links',
 			'@vuepress/google-analytics',
 			{
