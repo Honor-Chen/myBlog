@@ -110,13 +110,14 @@ module.exports = {
 					collapsable: false, // 是否展开
 					children: [
 						'source-code.md',
-						'Vue.js 源码调试准备工作.md'
+						'Vue.js 源码调试准备工作.md',
+						'[Vue3.0系列]-vite小工具.md'
 					]
 				}
 			],
 			'/front-end-ecosystem/react/': [
 				{
-					title: 'vue 生态系统',
+					title: 'react 生态系统',
 					collapsable: false, // 是否展开
 					children: [
 						'react-1.md',
