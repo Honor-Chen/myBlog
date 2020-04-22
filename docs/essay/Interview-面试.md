@@ -39,6 +39,20 @@
 	```
 	```js
 	/* 面试题03：实现 add(1, 2, 3)(4) = 10 */
-	<!-- ...待开发 -->
+	function add(...args) {
+		let a = args.reduce((pre, cur) => {
+			return pre + cur;
+		})
+		function sum(b){
+			a = a + b;
+			return sum;
+		}
+		sum.toString = function (){
+			return a;
+		}
+		return sum;
+	}
+	console.log(add(1, 2, 3)(4)); // 10
+	console.log(add(1, 2, 3)(4)(5)); // 15
 	```
 
