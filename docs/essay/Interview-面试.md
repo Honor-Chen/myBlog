@@ -56,3 +56,20 @@
 	console.log(add(1, 2, 3)(4)(5)); // 15
 	```
 
+- ## 计算页面标签次数
+
+```js
+function computed () {
+	const obj = [...document.getElementsByTagName('*')].map(v => v.nodeName).reduce((pre, cur) => {
+		if (cur in pre) {
+			pre[cur]++
+		} else {
+			pre[cur] = 1
+		}
+		return pre
+	}, {})
+
+	let keySort = Object.keys(obj).sort((a, b) => obj[b] - obj[a])
+	// console.log(keySort)
+}
+```
