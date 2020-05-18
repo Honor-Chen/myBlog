@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue3.0 beta版 vite小工具 | 鹿子博客</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link rel="icon" href="/myBlog/assets/favicon.ico">
+    <meta name="description" content="honor-chen-blog">
+    <link rel="preload" href="/myBlog/assets/css/0.styles.c0469d88.css" as="style"><link rel="preload" href="/myBlog/assets/js/app.b62005ba.js" as="script"><link rel="preload" href="/myBlog/assets/js/2.ab40a4c0.js" as="script"><link rel="preload" href="/myBlog/assets/js/24.a3d0cfe0.js" as="script"><link rel="prefetch" href="/myBlog/assets/js/10.c8e022d3.js"><link rel="prefetch" href="/myBlog/assets/js/11.02d3c559.js"><link rel="prefetch" href="/myBlog/assets/js/12.6b74f6df.js"><link rel="prefetch" href="/myBlog/assets/js/13.715f2cff.js"><link rel="prefetch" href="/myBlog/assets/js/14.54adc48d.js"><link rel="prefetch" href="/myBlog/assets/js/15.d63bf5c2.js"><link rel="prefetch" href="/myBlog/assets/js/16.f6b598e5.js"><link rel="prefetch" href="/myBlog/assets/js/17.8f207fbb.js"><link rel="prefetch" href="/myBlog/assets/js/18.50f289e4.js"><link rel="prefetch" href="/myBlog/assets/js/19.d7b39217.js"><link rel="prefetch" href="/myBlog/assets/js/20.a6279158.js"><link rel="prefetch" href="/myBlog/assets/js/21.3d436a68.js"><link rel="prefetch" href="/myBlog/assets/js/22.393ba6f6.js"><link rel="prefetch" href="/myBlog/assets/js/23.951505e8.js"><link rel="prefetch" href="/myBlog/assets/js/25.c044b916.js"><link rel="prefetch" href="/myBlog/assets/js/26.340808cd.js"><link rel="prefetch" href="/myBlog/assets/js/27.0e503ef7.js"><link rel="prefetch" href="/myBlog/assets/js/3.8a86c86f.js"><link rel="prefetch" href="/myBlog/assets/js/4.147674fb.js"><link rel="prefetch" href="/myBlog/assets/js/5.5002ec15.js"><link rel="prefetch" href="/myBlog/assets/js/6.766835d5.js"><link rel="prefetch" href="/myBlog/assets/js/7.5d5cec7f.js"><link rel="prefetch" href="/myBlog/assets/js/8.951b65c7.js"><link rel="prefetch" href="/myBlog/assets/js/9.a642e320.js">
+    <link rel="stylesheet" href="/myBlog/assets/css/0.styles.c0469d88.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myBlog/" class="home-link router-link-active"><img src="/myBlog/assets/logo.jpg" alt="鹿子博客" class="logo"> <span class="site-name can-hide">鹿子博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小前端生态圈" class="dropdown-title"><span class="title">小前端生态圈</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/front-end-ecosystem/JavaScripts/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/front-end-ecosystem/es6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/front-end-ecosystem/TypeScript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/front-end-ecosystem/vue/" class="nav-link router-link-active">
+  Vue 生态系统
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/front-end-ecosystem/react/" class="nav-link">
+  React 生态系统
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/servers-ecosystem/" class="nav-link">
+  服务生态圈
+</a></div><div class="nav-item"><a href="/myBlog/essay/" class="nav-link">
+  随笔
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于我" class="dropdown-title"><span class="title">关于我</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="http://www.idspring.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于我 A
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="https://github.com/Honor-Chen" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小前端生态圈" class="dropdown-title"><span class="title">小前端生态圈</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/front-end-ecosystem/JavaScripts/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/front-end-ecosystem/es6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/front-end-ecosystem/TypeScript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/front-end-ecosystem/vue/" class="nav-link router-link-active">
+  Vue 生态系统
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/front-end-ecosystem/react/" class="nav-link">
+  React 生态系统
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/servers-ecosystem/" class="nav-link">
+  服务生态圈
+</a></div><div class="nav-item"><a href="/myBlog/essay/" class="nav-link">
+  随笔
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于我" class="dropdown-title"><span class="title">关于我</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="http://www.idspring.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于我 A
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="https://github.com/Honor-Chen" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>vue 生态系统</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/myBlog/front-end-ecosystem/vue/source-code.html" class="sidebar-link">Vue</a></li><li><a href="/myBlog/front-end-ecosystem/vue/Vue.js 源码调试准备工作.html" class="sidebar-link">Vue.js 源码调试准备工作</a></li><li><a href="/myBlog/front-end-ecosystem/vue/[Vue3.0系列]-vite小工具.html" class="active sidebar-link">Vue3.0 beta版 vite小工具</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myBlog/front-end-ecosystem/vue/[Vue3.0系列]-vite小工具.html#_1-安装" class="sidebar-link">1. 安装</a></li><li class="sidebar-sub-header"><a href="/myBlog/front-end-ecosystem/vue/[Vue3.0系列]-vite小工具.html#_2-新建文件" class="sidebar-link">2. 新建文件</a></li><li class="sidebar-sub-header"><a href="/myBlog/front-end-ecosystem/vue/[Vue3.0系列]-vite小工具.html#_3-启动" class="sidebar-link">3. 启动</a></li><li class="sidebar-sub-header"><a href="/myBlog/front-end-ecosystem/vue/[Vue3.0系列]-vite小工具.html#_4-总结" class="sidebar-link">4. 总结</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue3-0-beta版-vite小工具"><a href="#vue3-0-beta版-vite小工具" class="header-anchor">#</a> Vue3.0 beta版 vite小工具</h1> <blockquote><p>一个实验性的不需要构建的 vue 开发服务器（支持热更新，不需要编译）。</p></blockquote> <blockquote><p>template -&gt; serve -&gt; html</p></blockquote> <h2 id="_1-安装"><a href="#_1-安装" class="header-anchor">#</a> 1. 安装</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 新建文件夹</span>
+mkdir vue<span class="token operator">-</span>vite
+cd vue<span class="token operator">-</span>vite
+
+<span class="token comment">// 初始化项目</span>
+npm init <span class="token operator">-</span>y
+
+<span class="token comment">// 全局安装 vite</span>
+npm install <span class="token operator">-</span>g vite
+
+<span class="token comment">// 安装vue3.0 beta版</span>
+npm install vue@next
+</code></pre></div><h2 id="_2-新建文件"><a href="#_2-新建文件" class="header-anchor">#</a> 2. 新建文件</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 新建文件</span>
+type nul <span class="token operator">&gt;</span> index<span class="token punctuation">.</span>html
+
+<span class="token comment">/* index.html(vue-vite/index.html) */</span>
+<span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">&quot;app&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">&quot;module&quot;</span><span class="token operator">&gt;</span>
+	<span class="token keyword">import</span> <span class="token punctuation">{</span> createApp <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span><span class="token punctuation">;</span>
+	<span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'./Component.vue'</span><span class="token punctuation">;</span>
+
+	<span class="token function">createApp</span><span class="token punctuation">(</span>Component<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">'#app'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+
+<span class="token comment">/* Component.vue(vue-vite/Component.vue) */</span>
+<span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>button @click<span class="token operator">=</span><span class="token string">&quot;count++&quot;</span><span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span> count <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">data</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> count<span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>style scoped<span class="token operator">&gt;</span>
+button <span class="token punctuation">{</span> color<span class="token operator">:</span> red <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">&gt;</span>
+</code></pre></div><h2 id="_3-启动"><a href="#_3-启动" class="header-anchor">#</a> 3. 启动</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// vue-vite/</span>
+npx vite
+<span class="token comment">// localhost:3000</span>
+</code></pre></div><h2 id="_4-总结"><a href="#_4-总结" class="header-anchor">#</a> 4. 总结</h2> <p>个人感觉对现阶段来测试 vue3.0 新增的 Composition API 来说很是方便。大概瞧了下源码，有 <code>koa</code>, <code>websocket</code>。</p> <p>期待发现更多的未知，加油！</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">4/22/2020, 10:33:32 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/myBlog/front-end-ecosystem/vue/Vue.js 源码调试准备工作.html" class="prev">
+        Vue.js 源码调试准备工作
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/myBlog/assets/js/app.b62005ba.js" defer></script><script src="/myBlog/assets/js/2.ab40a4c0.js" defer></script><script src="/myBlog/assets/js/24.a3d0cfe0.js" defer></script>
+  </body>
+</html>
