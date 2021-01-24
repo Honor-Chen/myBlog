@@ -152,7 +152,7 @@ module.exports = {
 					title: '前端面试之道',
 					collapsable: false, // 是否展开
 					children: [
-						'0小册食用指南.md',
+						'0查看指南.md',
 						'1JS 基础知识点及常考面试题（一）.md',
 						'2JS 基础知识点及常考面试题（二）.md',
 						'3ES6 知识点及常考面试题.md',
